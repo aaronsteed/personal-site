@@ -1,32 +1,20 @@
 [![Stories in Ready](https://badge.waffle.io/aaronsteed/personal-site.png?label=ready&title=Ready)](https://waffle.io/aaronsteed/personal-site)
 # personal-site
 
-> A profile for Aaron Steed, to advertise himself as a full stack web developer, software enginner and final year student.
+> A profile for Aaron Steed, to advertise himself as a full stack web developer, software engineer and final year student.
 
 ### Requirements
 This project requires the following :
 - NodeJS
     - Node Package Manager (NPM)
         - Bower 
-        - Grun
+        - Grunt
 
 Install Node from [here!](https://nodejs.org/en/) depending on your OS.
 
 
 ---
-### Technologies Used
-- HTML, CSS, JavaScript
-- Bower for Web Dependencies 
-    - JQuery 
-    - Animate.CSS
-- Grunt Task Runner
-    - Tasks :
-        -  Minifying HTML, CSS, JS files
-        -  Compressing images
-        -  Concatenating CSS and JS files
-        -  'Linting' JS files 
 
----
 ### Installation
 To download all dependencies, assuming you have downloaded and installed NodeJS, you will also have downloaded and installed NPM (Node Package Manager). Verify you have node and NPM.
 
@@ -57,7 +45,7 @@ $  npm install grunt
 
 ---
 ### Deployment
-Grunt  is used to deploy our project. grunt minifies, concatenates project files and optimizes images for maximum effeciency. 
+Grunt  is used to deploy the project as well as doing other handy tasks such as concatenating files, minimising them and minimising images as well as some other cool stuff you should definitely check it out [here!](http://gruntjs.com/)
 
 To install all the plugins grunt requires, we must first download them using npm :stuck_out_tongue:
 ```sh
@@ -80,20 +68,41 @@ The available plug-ins are as follows:
 - `cssmin` - Minifies the CSS files
 - `imagemin` - Minifies and compresses JPEG images
 - `htmlmin` - Minifies the HTML files
+- `version` - Applies new version to `package.json` and `bower.json` in one line. 
+- `compress` - After all minification, concatenation and 'linting' takes place, this plugin zips a copy of all files and places it in /dist/x.x.x/zip
 
-NOTE : `imagemin-mozjpeg - v5.1.0` is required as Grunt hasn't been updated to support v6.0.0
+NOTE : `imagemin-mozjpeg - v5.1.0` is required as `imagemin` hasn't been updated to support v6.0.0
  
  ---
 ### Version
-**0.1.1**
+
+**0.1.2**
+
+---
 
 ### Todos
  - Finish off website fully :sparkler:
  - Localhost setup :computer:
  - Full development environment within project :outbox_tray:
 
+---
+
+### Technologies Used
+- HTML, CSS, JavaScript
+- Bower for Web Dependencies 
+    - JQuery - [Too much good stuff to mention.](http://www.jquery.com) :blue_heart:
+    - Animate.CSS - Animating labels and icons. :dash:
+- Grunt Task Runner
+    - Tasks :
+        -  Minifying HTML, CSS, JS files
+        -  Compressing images
+        -  Concatenating CSS and JS files
+        -  'Linting' JS files 
+
+---
+
 License
-----
+---
 
 MIT     
 **Free Software, Hell Yeah!**

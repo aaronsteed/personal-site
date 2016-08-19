@@ -2,20 +2,33 @@
 //     "Book Reader", "Tea Drinker", "Software Engineer"
 // ];
 var imageUrl = "../../../resources/media/images/";
-var images = ["baloon-fest-baltinglass.jpeg", "carrigeen-sunset.jpeg",
-    "ha-penny-bridge.jpg", "ha-penny-bridge2.JPG",
-    "nou-camp-barcelona-pitch-view.jpeg",
-    "sagrada-familia-barcelona.JPG"
-];
+var imageTuples = [
+	{"image": "balloon-fest-baltinglass.jpg",
+	 "location": "Baltinglass, Co. Wicklow, Ireland",
+	 "url": ""},
+	 {"image": "carrigeen-sunset.jpg",
+	 "location": "Carrigeen, Baltinglass, Co. Wicklow, Ireland",
+	 "url": ""},
+	 {"image": "ha-penny-bridge.jpg",
+	 "location": "Ha'Penny Bridge, Co. Dublin, Ireland",
+	 "url": ""},
+	 {"image": "nou-camp-barcelona-pitch-view.jpg",
+	 "location": "Camp Nou, Carrer d'Aristides Maillol, Barcelona, Spain",
+	 "url": ""},
+	 {"image": "sagrada-familia-barcelona.jpg",
+	 "location": "La Sagrada Familia, Carrer de Mallorca, Barcelona, Spain",
+	 "url": ""}];
+
+// var googleMapUrls = 
 window.onload = function() {
-    var randomIndex = Math.floor((Math.random() * images.length));
-    console.log(randomIndex);
-    if (randomIndex === 1) {
-        document.getElementById("my-name").setAttribute("id", "my-name-black");
-        document.getElementById("what-I-do").setAttribute("id", "what-I-do-black");
-    }
-    document.getElementById("bg-image").setAttribute("src",
-        (imageUrl + images[randomIndex]));
+    var randomIndex = (Math.floor(Math.random() * imageTuples.length));
+    document.getElementById("blah").setAttribute("src",(imageUrl + imageTuples[randomIndex].image));
+    document.getElementById("location").innerText = imageTuples[randomIndex].location;
+     $("#hobby").typed({
+            strings: ["Software ^500 Engineer", "Web Developer", "Student", "Tea Drinker", "Comic Book Reader"],
+            typeSpeed: 0,
+            loop: true
+        });
 };
 
 // var index = 0;

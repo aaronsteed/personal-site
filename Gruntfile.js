@@ -58,6 +58,7 @@ module.exports = function(grunt) {
                 eqnull: true,
                 browser: true,
                 globals: {
+                    "$": false,
                     console: true,
                     module: true,
                     jQuery: true
@@ -129,7 +130,7 @@ module.exports = function(grunt) {
                     expand: true,
                     cwd: '<%= dist %>',
                     src: ['**/*'],
-                    dest: '<%= dist %>' + '/zip/',
+                    dest: '.',
                 }]
             }
         }
