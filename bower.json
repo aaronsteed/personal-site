@@ -1,8 +1,10 @@
 {
   "name": "personal-site",
-  "description": "A personal site to advertise myself as a developer.",
-  "version": "0.1.1",
-  "authors": ["Aaron Steed <asteed7@gmail.com>"],
+  "description": "A profile for Aaron Steed, to advertise himself as a full stack web developer, software enginner and final year student.",
+  "version": "0.1.2",
+  "authors": [
+    "Aaron Steed <asteed7@gmail.com>"
+  ],
   "main": "src/personal-site/html/index.html",
   "homepage": "https://github.com/aaronsteed/personal-site",
   "email": "asteed7@gmail.com",
@@ -17,6 +19,7 @@
   ],
   "dependencies": {
     "jquery": "^3.1.0",
-    "animate.css": "git@github.com:daneden/animate.css.git#^3.5.2"
+    "animate.css": "^3.5.2",
+    "typed.js": "^1.1.4"
   }
 }
