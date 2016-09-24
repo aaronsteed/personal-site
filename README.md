@@ -17,7 +17,7 @@ Install Node from [here!](https://nodejs.org/en/) depending on your OS.
 ---
 
 ### Installation
-To download all dependencies, assuming you have downloaded and installed NodeJS, you will also have downloaded and installed NPM (Node Package Manager). Verify you have node and NPM.
+To download all dependencies, assuming you have downloaded and installed NodeJS, you will also have downloaded and installed NPM (Node Package Manager). Verify you have node and NPM and their correct versions used on this project.
 
 ```sh
 $ node -v
@@ -62,15 +62,15 @@ $  grunt
 
 This runs all the plug-ins Grunt has configured in `Gruntfile.js`
 The available plug-ins are as follows:
-- `clean` - Deletes the dist directory of the current version E.g. `dist/0.1.x`
-- `concat` - concatenates JQuery files with the Javascript
-- `uglify` - minifies the animate.css along with the CSS files and minifies JQuery files with the Javascript
-- `jshint` - Lints the `Gruntfile.js` along with all the Javascript files.
+- `clean` - Deletes the dist directory of the current version E.g. `dist/0.1.x` in prep of new dist
+- `concat` - concatenates all Javascript files together into one file
+- `uglify` - Minifies concatenated file
+- `jshint` - Lints the `Gruntfile.js` along with all other Javascript files used in the project
 - `cssmin` - Minifies the CSS files
-- `imagemin` - Minifies and compresses JPEG images
-- `htmlmin` - Minifies the HTML files
-- `version` - Applies new version to `package.json` and `bower.json` in one line. 
-- `compress` - After all minification, concatenation and 'linting' takes place, this plugin zips a copy of all files and places it in /dist/x.x.x/zip
+- `imagemin` - Minifies and compresses JPG images of project
+- `htmlmin` - Minifies all HTML files
+- `version` - Applies new version to `package.json` and `bower.json` in one line
+- `compress` - After all minification, concatenation and 'linting' takes place, this plugin zips a copy of all files and places it in /dist/x.x.x/zip, where x.x.x. represents the version of the project
 
 NOTE : `imagemin-mozjpeg - v5.1.0` is required as `imagemin` hasn't been updated to support v6.0.0
  
@@ -93,12 +93,15 @@ NOTE : `imagemin-mozjpeg - v5.1.0` is required as `imagemin` hasn't been updated
 - Bower for Web Dependencies 
     - JQuery - [Too much good stuff to mention.](http://www.jquery.com) :blue_heart:
     - Animate.CSS - Animating labels and icons. :dash:
-- Grunt Task Runner
+    - Typed.js - Animating the hobby as a type effect under my name on the site. :card_index:
+- Grunt
     - Tasks :
         -  Minifying HTML, CSS, JS files
         -  Compressing images
         -  Concatenating CSS and JS files
         -  'Linting' JS files 
+- Travis CI 
+    - Continuous Integration
 
 ---
 
