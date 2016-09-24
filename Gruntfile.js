@@ -111,7 +111,7 @@ module.exports = function(grunt) {
               files: [{
                 expand: true,
                 cwd: 'resources/media/',
-                src: ['**/*.jpeg'],
+                src: ['**/*.jpg'],
                 dest: '<%= dist %>'
               }]
             }
